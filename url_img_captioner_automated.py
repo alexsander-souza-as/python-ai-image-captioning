@@ -1,7 +1,12 @@
-
+'''
+This script scrapes images from any webpage you provide and 
+generates captions for each using the BLIP model.
+Just enter a URL, and it will find, process, and save captions for all images on that page.
+'''
 
 # import libraries
 import requests
+import gradio as gr
 from urllib.parse import urljoin
 from PIL import Image
 from io import BytesIO
@@ -30,6 +35,8 @@ def scrape_and_caption_images(url:str, output_path:str="outputs/img_captions.txt
     img_tags = soup.find_all("img")
     print(f"Found {len(img_tags)} <img> tags")
 
+    processed_count = 0
+    
     # write path and caption in a txt file
     with open(output_path, "w", encoding="utf-8") as img_captions:
         for img_no, img in enumerate(img_tags, start=1):
@@ -84,10 +91,25 @@ def scrape_and_caption_images(url:str, output_path:str="outputs/img_captions.txt
 
                 img_captions.write(f"{url_img}: {img_caption}\n")
                 print(f"Caption #{img_no} saved")
-
+                processed_count += 1
             except OSError:
                 continue
 
             except Exception as e:
                 print(f"Error by Caption #{img_no}")
                 continue
+        return f"Captions for {processed_count} images saved to {output_path}"
+    
+
+_ui = gr.Interface(
+    fn=scrape_and_caption_images,
+    inputs=[
+        gr.Textbox(label="Webpage URL"),
+        gr.Textbox(label="Output Path", value="outputs/img_captions.txt")
+    ],
+    outputs="text",
+    title="Webpage Image Captioning",
+    description="Enter a webpage URL to automatically scrape images and generate captions using the BLIP model."
+)
+
+_ui.launch(server_name="127.0.0.1", server_port=7861, inbrowser=True)

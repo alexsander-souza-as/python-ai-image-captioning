@@ -1,3 +1,8 @@
+'''
+This script provides a simple Gradio web interface for uploading an image 
+and generating a caption using the BLIP model.
+Run it and use your browser to get instant captions for any image you upload.
+'''
 
 # importing libraries
 import gradio as gr
@@ -45,4 +50,4 @@ _ui = gr.Interface(
     description="Simple web application for image captioning using BLIP pretrained model"
 )
 
-_ui.launch()
+_ui.launch(server_name="127.0.0.1", server_port=7860, inbrowser=True)
