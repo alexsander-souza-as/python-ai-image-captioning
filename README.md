@@ -2,6 +2,16 @@
 
 This project provides a practical set of tools for generating captions for images using the BLIP model. You can caption images by uploading a single file, processing all images in a local folder, or scraping images from a webpage. The interface is simple and user-friendly, making it easy for anyone to use.
 
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Output](#example-output)
+- [Notes](#notes)
+- [Contributing & License](#contributing--license)
+- [Acknowledgements](#acknowledgements)
+
 ## Features
 
 - **Single Image Upload:** Instantly get a caption for any image you upload via the web interface.
